@@ -36,6 +36,9 @@
             pointer-events: none;
             opacity: 0.04;
             background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+            will-change: transform;
+            transform: translateZ(0);
+            backface-visibility: hidden;
         }
 
         .container {
@@ -170,3 +173,4 @@
     </div>
 </body>
 </html>
+
