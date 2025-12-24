@@ -6,10 +6,8 @@
     <title>SuppVisuals | Photorealistic 3D Supplement Mockups & Amazon A+ Content</title>
     <meta name="description" content="Photorealistic 3D supplement bottle mockups and Amazon A+ Content visuals. High-converting product images for protein powders, vitamins, and wellness brands.">
 
-    <!-- سئو: آدرس اصلی -->
     <link rel="canonical" href="https://suppvisuals.com/">
 
-    <!-- Open Graph برای وقتی لینک رو جایی شیر می‌کنی -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="SuppVisuals | Photorealistic 3D Supplement Mockups">
     <meta property="og:description" content="Studio-grade 3D supplement bottle mockups and Amazon A+ Content for protein powders, vitamins, and wellness brands.">
@@ -37,7 +35,7 @@
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            z-index: 0;
+            z-index: 9999; /* اصلاح شد: باید رو باشد تا نویز دیده شود */
             pointer-events: none;
             opacity: 0.04;
             background-image: url("https://grainy-gradients.vercel.app/noise.svg");
@@ -48,7 +46,7 @@
 
         .container {
             position: relative;
-            z-index: 1;
+            z-index: 10000;
             max-width: 720px;
             padding: 40px 24px;
             box-sizing: border-box;
@@ -68,13 +66,10 @@
             filter: drop-shadow(0 0 30px rgba(0, 209, 255, 0.45));
         }
 
-        /* H1 برای سئو و اسکرین‌ریدر – مخفی بصری */
         h1 {
             position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
             overflow: hidden;
             clip: rect(0, 0, 0, 0);
             border: 0;
@@ -126,20 +121,10 @@
             color: #888888;
         }
         @media (max-width: 480px) {
-            .brand-logo {
-                width: 280px;
-                margin-bottom: 25px;
-            }
-            h2 {
-                font-size: 0.85rem;
-                letter-spacing: 0.25em;
-            }
-            p {
-                font-size: 1rem;
-            }
-            .services {
-                font-size: 0.8rem;
-            }
+            .brand-logo { width: 280px; margin-bottom: 25px; }
+            h2 { font-size: 0.85rem; letter-spacing: 0.25em; }
+            p { font-size: 1rem; }
+            .services { font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -149,32 +134,22 @@
         <a href="https://suppvisuals.com" style="text-decoration: none;">
             <img src="logo-white.svg" alt="SuppVisuals - Photorealistic 3D Supplement Mockups" class="brand-logo">
         </a>
-
-        <!-- H1 مخفی ولی پر از کیورد -->
         <h1>Photorealistic 3D supplement mockups and Amazon listing images by SuppVisuals</h1>
-
         <h2>Photorealistic Supplement Visuals</h2>
-
         <p>
             SuppVisuals is a small studio focused on photorealistic 3D supplement bottle mockups  
             and Amazon listing images. We’re currently building a new home for high-end protein  
-            powder, vitamin, and wellness renders that look like real studio photography and  
-            are optimized for clicks and conversions.
+            powder, vitamin, and wellness renders that look like real studio photography.
         </p>
-
         <div class="services">
             PROTEIN POWDERS • VITAMINS • SUPPLEMENT BOTTLES • AMAZON A+ CONTENT • 3D MOCKUPS
         </div>
-
         <p class="subcopy">
             Clean, conversion-driven hero images, 3D supplement bottle renders, A+ Content modules  
             and listing infographics for Amazon, Shopify and DTC supplement brands.
         </p>
-
         <div class="cta">
-            <a href="https://www.upwork.com/services/product/design-photorealistic-supplement-bottle-3d-mockup-for-amazon-listing-a-content-1999832298062591266?ref=project_share&tier=0" class="upwork-link">
-                Hire me on Upwork
-            </a>
+            <a href="https://www.upwork.com/services/product/design-photorealistic-supplement-bottle-3d-mockup-for-amazon-listing-a-content-1999832298062591266?ref=project_share&tier=0" class="upwork-link">Hire me on Upwork</a>
             <br><br>
             <a href="mailto:hi@suppvisuals.com" style="text-decoration: none; color: #ffffff; font-size: 0.9rem; opacity: 0.8;">
                 📩 hi@suppvisuals.com
