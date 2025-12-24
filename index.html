@@ -10,6 +10,8 @@
 
     <style>
         body {
+            <div class="grain"></div>
+
     font-family: 'Inter', -apple-system, system-ui, -webkit-system-font, sans-serif;
     /* یک گرادینت شعاعی که از خاکستری تیره در مرکز به مشکی در لبه‌ها می‌رود */
     background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
@@ -119,6 +121,16 @@
                 font-size: 0.8rem;
             }
         }
+        .grain {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 9999; /* بالای همه لایه‌ها */
+    pointer-events: none; /* مانع کلیک کردن روی دکمه‌ها نشود */
+    opacity: 0.04; /* خیلی خیلی ملایم */
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
     </style>
 </head>
 <body>
@@ -156,6 +168,7 @@
     </div>
 </body>
 </html>
+
 
 
 
