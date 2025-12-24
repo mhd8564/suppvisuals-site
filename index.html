@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuppVisuals | Photorealistic 3D Supplement Mockups & Amazon A+ Content</title>
     <meta name="description" content="Photorealistic 3D supplement bottle mockups and Amazon A+ Content visuals. High-converting product images for protein powders, vitamins, and wellness brands.">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <style>
         body {
             font-family: 'Inter', -apple-system, system-ui, -webkit-system-font, sans-serif;
@@ -22,12 +25,28 @@
             padding: 40px 24px;
             box-sizing: border-box;
         }
-        h1 {
-            font-size: 3rem;
-            margin: 0 0 6px 0;
-            color: #00D1FF;
-            letter-spacing: -0.06em;
+        
+        /* استایل لوگوی جدید و بزرگ‌تر */
+        .brand-logo {
+            width: 450px; /* اندازه را از ۳۲۰ به ۴۵۰ رساندم */
+            max-width: 95%; /* برای اینکه در موبایل از کادر بیرون نزند */
+            height: auto;
+            margin-bottom: 5px;
+            display: inline-block;
         }
+
+        /* این بخش برای سئو عالی است و جریمه ندارد */
+        h1 {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
         h2 {
             font-size: 1.05rem;
             color: #999999;
@@ -69,28 +88,15 @@
             background: #00D1FF;
             color: #050505;
         }
-        .email-contact {
-            display: block;
-            color: #aaaaaa;
-            text-decoration: none;
-            font-size: 0.9rem;
-            margin-top: 6px;
-            transition: 0.25s;
-        }
-        .email-contact:hover {
-            color: #ffffff;
-        }
         .subcopy {
             font-size: 0.95rem;
             color: #888888;
         }
         @media (max-width: 480px) {
-            h1 {
-                font-size: 2.3rem;
-            }
+            .brand-logo { width: 240px; }
             h2 {
-                font-size: 0.9rem;
-                letter-spacing: 0.3em;
+                font-size: 0.85rem;
+                letter-spacing: 0.25em;
             }
             p {
                 font-size: 1rem;
@@ -103,8 +109,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>SuppVisuals</h1>
-        <h2>Photorealistic Supplement Visuals</h2>
+        <a href="https://suppvisuals.com" style="text-decoration: none;">
+            <img src="logo-white.svg" alt="SuppVisuals - Photorealistic 3D Supplement Mockups" class="brand-logo">
+        </a>
+        <h1>SuppVisuals</h1> <h2>Photorealistic Supplement Visuals</h2>
 
         <p>
             We’re currently building a new home for high-end supplement visuals.
@@ -121,17 +129,13 @@
             Focused on clean, conversion-driven hero images, infographics and
             listing graphics for Amazon, Shopify and DTC supplement brands.
         </p>
-
-        <div class="cta">
+<div class="cta">
             <a href="https://www.upwork.com/services/product/design-photorealistic-supplement-bottle-3d-mockup-for-amazon-listing-a-content-1999832298062591266?ref=project_share&tier=0" class="upwork-link">Hire me on Upwork</a>
             <br><br>
-
-        <a href="mailto:hi@suppvisuals.com" style="text-decoration: none; color: #ffffff; font-size: 0.9rem; opacity: 0.8;">
-        📩 hi@suppvisuals.com
-        </a>
+            <a href="mailto:hi@suppvisuals.com" style="text-decoration: none; color: #ffffff; font-size: 0.9rem; opacity: 0.8;">
+                📩 hi@suppvisuals.com
+            </a>
         </div>
     </div>
 </body>
 </html>
-
-
