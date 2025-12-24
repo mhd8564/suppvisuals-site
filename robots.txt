@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suppvisuals.com/sitemap.xml
