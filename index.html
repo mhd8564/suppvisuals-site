@@ -10,16 +10,19 @@
 
     <style>
         body {
-            font-family: 'Inter', -apple-system, system-ui, -webkit-system-font, sans-serif;
-            background-color: #050505;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
+    font-family: 'Inter', -apple-system, system-ui, -webkit-system-font, sans-serif;
+    /* یک گرادینت شعاعی که از خاکستری تیره در مرکز به مشکی در لبه‌ها می‌رود */
+    background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+    background-attachment: fixed; /* باعث می‌شود موقع اسکرول، نور ثابت بماند */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
         .container {
             max-width: 720px;
             padding: 40px 24px;
@@ -145,5 +148,6 @@
     </div>
 </body>
 </html>
+
 
 
