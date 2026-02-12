@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuppVisuals | Photorealistic 3D Supplement Mockups & Amazon A+ Content</title>
-    <meta name="description" content="Photorealistic 3D supplement bottle mockups and Amazon A+ Content visuals. High-converting product images for protein powders, vitamins, and wellness brands.">
+    <title>SuppVisuals | Photorealistic 3D Supplement Mockups, Custom Labels & Amazon A+ Content</title>
+    <meta name="description" content="Professional photorealistic 3D supplement bottle mockups, custom supplement label design, high-converting Amazon listing images and premium A+ Content visuals for protein powders, vitamins, pre-workouts, and wellness brands. Studio-grade renders optimized for Amazon sellers – full portfolio launching soon.">
 
     <link rel="canonical" href="https://suppvisuals.com/">
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="SuppVisuals | Photorealistic 3D Supplement Mockups">
-    <meta property="og:description" content="Studio-grade 3D supplement bottle mockups and Amazon A+ Content for protein powders, vitamins, and wellness brands.">
+    <meta property="og:title" content="SuppVisuals | Photorealistic 3D Supplement Mockups, Custom Labels & Amazon A+ Content">
+    <meta property="og:description" content="High-end 3D renders, custom label designs, Amazon listing optimization visuals, and conversion-driven A+ Content for supplement brands on Amazon, Shopify & DTC.">
     <meta property="og:url" content="https://suppvisuals.com/">
     <meta property="og:image" content="https://suppvisuals.com/og-image.jpg">
 
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SuppVisuals",
+      "url": "https://suppvisuals.com",
+      "logo": "https://suppvisuals.com/logo-white.svg",
+      "description": "Photorealistic 3D supplement mockups, custom label design, Amazon A+ Content and listing images studio.",
+      "email": "hi@suppvisuals.com"
+    }
+    </script>
 
     <style>
         body {
@@ -22,10 +36,6 @@
             background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
             background-attachment: fixed;
             color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             margin: 0;
             text-align: center;
             overflow-x: hidden;
@@ -35,7 +45,7 @@
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            z-index: 9999; /* اصلاح شد: باید رو باشد تا نویز دیده شود */
+            z-index: 9999;
             pointer-events: none;
             opacity: 0.04;
             background-image: url("https://grainy-gradients.vercel.app/noise.svg");
@@ -47,9 +57,16 @@
         .container {
             position: relative;
             z-index: 10000;
-            max-width: 720px;
-            padding: 40px 24px;
+            max-width: 820px;
+            padding: 60px 24px;
+            margin: 0 auto;
             box-sizing: border-box;
+            opacity: 0;
+            animation: fadeIn 1.8s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
         }
 
         .brand-logo {
@@ -57,114 +74,144 @@
             max-width: 95%;
             height: auto;
             display: block;
-            margin: 0 auto 35px auto;
+            margin: 0 auto 40px auto;
             filter: drop-shadow(0 0 20px rgba(0, 209, 255, 0.25));
             transition: filter 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1.2s ease-out 0.3s forwards;
         }
 
         .brand-logo:hover {
             filter: drop-shadow(0 0 30px rgba(0, 209, 255, 0.45));
         }
 
-        h1 {
-            position: absolute;
-            width: 1px; height: 1px;
-            padding: 0; margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        h2 {
-            font-size: 1.05rem;
-            color: #999999;
-            text-transform: uppercase;
-            letter-spacing: 0.35em;
-            margin: 0 0 32px 0;
-        }
-        p {
-            font-size: 1.15rem;
-            color: #dddddd;
-            line-height: 1.6;
-            margin: 0 0 18px 0;
-        }
-        .services {
-            color: #00FF85;
-            font-weight: 500;
-            font-size: 0.95rem;
-            border-top: 1px solid #222222;
-            border-bottom: 1px solid #222222;
-            padding: 14px 0;
-            margin: 30px 0;
-        }
-        .cta {
-            margin-top: 32px;
-        }
-        .upwork-link {
-            color: #00D1FF;
-            text-decoration: none;
-            border: 1px solid #00D1FF;
-            padding: 10px 26px;
-            border-radius: 999px;
-            transition: 0.25s;
-            display: inline-block;
-            font-size: 0.95rem;
-            font-weight: 500;
-            margin-bottom: 18px;
-        }
-        .upwork-link:hover {
-            background: #00D1FF;
-            color: #050505;
-        }
-        .subcopy {
-            font-size: 0.95rem;
-            color: #888888;
-        }
-        @media (max-width: 480px) {
-            .brand-logo { width: 280px; margin-bottom: 25px; }
-            h2 { font-size: 0.85rem; letter-spacing: 0.25em; }
-            p { font-size: 1rem; }
-            .services { font-size: 0.8rem; }
-        }
+        h1 { font-size: 2.4rem; margin: 0 0 16px 0; color: #ffffff; font-weight: 700; letter-spacing: -0.02em; opacity: 0; animation: fadeInUp 1.3s ease-out 0.6s forwards; }
+        h2 { font-size: 1.4rem; color: #00FF85; margin: 48px 0 24px; text-transform: uppercase; letter-spacing: 0.2em; opacity: 0; animation: fadeIn 1.4s forwards 0.9s; }
+        h3 { font-size: 1.3rem; color: #00D1FF; margin: 32px 0 16px; opacity: 0; animation: fadeInUp 1.2s forwards 1.2s; }
+        p { font-size: 1.15rem; color: #dddddd; line-height: 1.7; margin: 0 0 24px 0; opacity: 0; animation: fadeInUp 1.4s forwards 1.0s; }
+
+        .services { color: #00FF85; font-weight: 500; font-size: 1rem; border-top: 1px solid #222222; border-bottom: 1px solid #222222; padding: 16px 0; margin: 32px 0; letter-spacing: 0.05em; opacity: 0; animation: fadeIn 1.5s forwards 1.3s; }
+        .service-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 32px 0; opacity: 0; animation: fadeInUp 1.5s forwards 1.5s; }
+        .service-item { background: rgba(0, 209, 255, 0.08); border: 1px solid rgba(0, 209, 255, 0.15); border-radius: 12px; padding: 16px 24px; font-size: 1rem; color: #00D1FF; }
+
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin: 40px 0; opacity: 0; animation: fadeInUp 1.6s forwards 1.7s; }
+        .gallery img { width: 100%; border-radius: 12px; border: 1px solid #222; opacity: 0.85; transition: opacity 0.3s, transform 0.3s; }
+        .gallery img:hover { opacity: 1; transform: scale(1.03); }
+
+        .faq { text-align: left; max-width: 680px; margin: 48px auto; opacity: 0; animation: fadeInUp 1.6s forwards 2.0s; }
+        .faq details { margin-bottom: 16px; background: rgba(255,255,255,0.03); padding: 16px; border-radius: 8px; border: 1px solid #222; }
+        .faq summary { cursor: pointer; font-weight: 600; color: #00D1FF; }
+
+        .cta { margin: 48px 0 32px; opacity: 0; animation: fadeInUp 1.4s forwards 2.3s; }
+        .upwork-link { color: #00D1FF; text-decoration: none; border: 1px solid #00D1FF; padding: 14px 32px; border-radius: 999px; transition: all 0.3s; display: inline-block; font-size: 1.1rem; font-weight: 600; }
+        .upwork-link:hover { background: #00D1FF; color: #050505; transform: translateY(-2px); }
+
+        .subcopy { font-size: 0.95rem; color: #888888; margin-top: 40px; opacity: 0; animation: fadeIn 2s forwards 2.5s; }
+
+        @media (max-width: 640px) { h1 { font-size: 2rem; } .brand-logo { width: 320px; margin-bottom: 30px; } .service-item { padding: 12px 18px; font-size: 0.95rem; } }
     </style>
 </head>
 <body>
     <div class="grain"></div>
     <div class="container">
+
         <a href="https://suppvisuals.com" style="text-decoration: none;">
-            <img src="logo-white.svg" alt="SuppVisuals - Photorealistic 3D Supplement Mockups" class="brand-logo">
+            <img src="logo-white.svg" alt="SuppVisuals - Photorealistic 3D Supplement Mockups, Custom Labels & Amazon A+ Content Studio" class="brand-logo">
         </a>
-        <h1>Photorealistic 3D supplement mockups and Amazon listing images by SuppVisuals</h1>
-        <h2>Photorealistic Supplement Visuals</h2>
+
+        <h1>Photorealistic 3D Supplement Mockups & Amazon Listing Optimization</h1>
+        <h2>Coming Soon – Q2 2026</h2>
+
         <p>
-            SuppVisuals is a small studio focused on photorealistic 3D supplement bottle mockups  
-            and Amazon listing images. We’re currently building a new home for high-end protein  
-            powder, vitamin, and wellness renders that look like real studio photography.
+            SuppVisuals is a specialized 3D visualization and design studio dedicated to <strong>photorealistic 3D supplement bottle mockups</strong>, <strong>custom supplement label design</strong>, and <strong>high-converting Amazon A+ Content visuals</strong>. We empower protein powder, vitamin, pre-workout, collagen, and wellness brands to create professional, studio-grade product images and listings that dramatically boost sales on Amazon, Shopify, and direct-to-consumer platforms.
         </p>
+
+        <p>
+            Our photorealistic renders are crafted to look identical to real studio photography – with perfect lighting, realistic textures, accurate shadows, reflections, and material details. We go beyond basic mockups: we help Amazon sellers optimize their entire visual strategy, from hero images and infographics to full <strong>Amazon listing images</strong> and <strong>premium A+ Content modules</strong> that educate buyers, overcome objections, and drive higher conversions.
+        </p>
+
+        <p>
+            In addition to 3D mockups, we offer complete <strong>custom supplement label design</strong> services. Whether you need eye-catching, compliant labels for private label supplements or refreshed designs for existing products, our labels are optimized for readability, brand appeal, and Amazon's strict guidelines – ensuring your product stands out in a crowded supplement niche.
+        </p>
+
+        <p>
+            We understand what makes supplement listings sell in 2026: high-quality visuals that build trust, highlight benefits, and incorporate <strong>high-converting keywords</strong> naturally. Our visuals are specifically tailored for <strong>Amazon listing optimization</strong>, focusing on conversion-driven elements like benefit-focused imagery, comparison charts, ingredient spotlights, and lifestyle shots that resonate with health-conscious buyers.
+        </p>
+
         <div class="services">
-            PROTEIN POWDERS • VITAMINS • SUPPLEMENT BOTTLES • AMAZON A+ CONTENT • 3D MOCKUPS
+            PHOTOREALISTIC 3D SUPPLEMENT MOCKUPS • CUSTOM SUPPLEMENT LABEL DESIGN • AMAZON LISTING IMAGES • PREMIUM A+ CONTENT • PROTEIN POWDER RENDERS • VITAMIN BOTTLE VISUALS • AMAZON A+ MODULES • HIGH-CONVERTING WELLNESS GRAPHICS
         </div>
-        <p class="subcopy">
-            Clean, conversion-driven hero images, 3D supplement bottle renders, A+ Content modules  
-            and listing infographics for Amazon, Shopify and DTC supplement brands.
-        </p>
+
+        <h3>What We Will Offer – Full Range of Services</h3>
+        <div class="service-list">
+            <div class="service-item">Photorealistic 3D bottle & tub mockups</div>
+            <div class="service-item">Custom label design & integration</div>
+            <div class="service-item">360° views & multiple angles</div>
+            <div class="service-item">Amazon A+ Content modules & templates</div>
+            <div class="service-item">Infographics, comparison charts & benefit visuals</div>
+            <div class="service-item">High-converting Amazon listing images</div>
+            <div class="service-item">Fast custom revisions & optimizations</div>
+        </div>
+
+        <h3>Why SuppVisuals for Your Supplement Brand?</h3>
+        <ul style="text-align: left; max-width: 580px; margin: 0 auto 32px; padding-left: 24px; line-height: 1.8; color: #ddd; font-size: 1.1rem;">
+            <li>Studio-grade photorealistic quality at competitive freelance rates</li>
+            <li>Specialized in Amazon listing optimization for supplements – visuals designed to increase click-through and conversion rates</li>
+            <li>Expert custom supplement label design that complies with FDA/Amazon rules while maximizing shelf appeal</li>
+            <li>Conversion-focused Amazon A+ Content that educates buyers and reduces returns</li>
+            <li>Realistic materials, lighting, and details indistinguishable from professional photoshoots</li>
+            <li>Ready-to-upload files: high-res PNG/JPG with transparent backgrounds, optimized for Amazon image requirements</li>
+            <li>Personalized, fast-turnaround service from a dedicated 3D artist passionate about the supplement industry</li>
+        </ul>
+
+        <h3>Teaser Gallery – Work in Progress</h3>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/400x500/111/00D1FF?text=Protein+Powder+Mockup+1" alt="Photorealistic 3D protein powder tub mockup with custom label – Amazon listing ready">
+            <img src="https://via.placeholder.com/400x500/111/00FF85?text=Vitamin+Bottle+Render" alt="Photorealistic 3D vitamin supplement bottle mockup and custom label design for Amazon">
+            <img src="https://via.placeholder.com/400x500/111/00D1FF?text=Amazon+A+++Content" alt="High-converting Amazon A+ Content module example – supplement infographic and visuals">
+            <img src="https://via.placeholder.com/400x500/111/00FF85?text=Pre-Workout+Tub+Label" alt="3D pre-workout supplement container render with professional custom label">
+        </div>
+
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <details>
+                <summary>When will the full portfolio and shop launch?</summary>
+                <p>Targeted for Q2 2026 – including full gallery of photorealistic 3D supplement mockups, custom label samples, Amazon A+ Content examples, pricing, and easy ordering system.</p>
+            </details>
+            <details>
+                <summary>Can I order custom work right now?</summary>
+                <p>Absolutely! Hire me on Upwork for custom photorealistic 3D mockups, supplement label design, or Amazon listing visuals while the main site is under construction.</p>
+            </details>
+            <details>
+                <summary>What makes your Amazon A+ Content and listings different?</summary>
+                <p>Our visuals are built for conversions: keyword-optimized alt text, benefit-driven layouts, high-res images, and modules that address buyer pain points in the supplement niche – leading to higher rankings and sales.</p>
+            </details>
+            <details>
+                <summary>Do you handle custom label design?</summary>
+                <p>Yes – we create professional, eye-catching supplement labels tailored to your brand, with full integration into 3D mockups for seamless Amazon listing images.</p>
+            </details>
+        </div>
+
         <div class="cta">
             <a href="https://www.upwork.com/services/product/design-photorealistic-supplement-bottle-3d-mockup-for-amazon-listing-a-content-1999832298062591266?ref=project_share&tier=0" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="upwork-link">
-               Hire me on Upwork
+               target="_blank" rel="noopener noreferrer" class="upwork-link">
+               Hire Me on Upwork – Custom 3D Mockups, Labels & Amazon Visuals
             </a>
             <br><br>
-            <a href="mailto:hi@suppvisuals.com" 
-               style="text-decoration: none; color: #ffffff; font-size: 0.9rem; opacity: 0.8;">
+            <a href="mailto:hi@suppvisuals.com" style="color: #ffffff; font-size: 1rem; opacity: 0.9; text-decoration: none;">
                📩 hi@suppvisuals.com
             </a>
         </div>
-        <p style="margin-top: 30px; font-size: 0.85rem; color: #888; text-align: center; margin-bottom: 0;">
-    Last updated: February 2026 • Full portfolio launching soon
-</p>
+
+        <p class="subcopy">
+            Last updated: February 2026 • SuppVisuals – Expert in photorealistic 3D supplement mockups, custom label design, Amazon listing optimization, and high-converting A+ Content for the supplement & wellness industry • Full launch coming soon.
+        </p>
+
     </div>
-            
 </body>
 </html>
