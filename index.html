@@ -114,9 +114,67 @@
         .subcopy { font-size: 0.95rem; color: #888888; margin-top: 40px; opacity: 0; animation: fadeIn 2s forwards 2.5s; }
 
         @media (max-width: 640px) { h1 { font-size: 2rem; } .brand-logo { width: 320px; margin-bottom: 30px; } .service-item { padding: 12px 18px; font-size: 0.95rem; } }
+
+        /* تنظیمات کلی آیکون‌ها برای داشتن Fade نرم */
+.social-item {
+    transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    filter: grayscale(1) opacity(0.5);
+    display: inline-block;
+}
+
+.social-item:hover {
+    filter: grayscale(0) opacity(1);
+    transform: translateY(-3px); /* یه کوچولو میره بالا */
+}
+
+/* آیکون‌های بالا سمت راست */
+.top-socials {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    gap: 30px; /* فاصله نزدیک به هم */
+    z-index: 10001;
+}
+
+.social-item.small img {
+    width: 48px; /* سایز ظریف و شیک برای بالا */
+    height: auto;
+}
+
+/* آیکون‌های بزرگ پایین */
+.social-links-main {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.social-item.large img {
+    width: 60px; /* سایز بزرگ و چشم‌گیر برای پایین */
+    height: auto;
+}
+
+/* هاله نوری (Glow) در لحظه هوور */
+.upwork:hover { filter: drop-shadow(0 0 12px rgba(20, 168, 0, 0.7)) grayscale(0) opacity(1); }
+.linkedin:hover { filter: drop-shadow(0 0 12px rgba(0, 119, 181, 0.7)) grayscale(0) opacity(1); }
+.email:hover { filter: drop-shadow(0 0 12px rgba(0, 209, 255, 0.7)) grayscale(0) opacity(1); }
+
+/* ریسپانسیو برای گوشی */
+@media (max-width: 640px) {
+    .top-socials { top: 20px; right: 20px; gap: 10px; }
+    .social-item.small img { width: 20px; }
+    .social-links-main { gap: 30px; }
+    .social-item.large img { width: 45px; }
+}
     </style>
 </head>
 <body>
+    <div class="top-socials">
+    <a href="https://www.upwork.com/services/product/design-photorealistic-supplement-bottle-3d-mockup-for-amazon-listing-a-content-1999832298062591266?ref=project_share&tier=0" target="_blank" class="social-item small upwork"><img src="upwork-icon.svg" alt="Upwork"></a>
+    <a href="https://www.linkedin.com/in/suppvisuals/" target="_blank" class="social-item small linkedin"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+    <a href="mailto:hi@suppvisuals.com" class="social-item small email"><img src="email-icon.svg" alt="Email"></a>
+</div>
     <div class="grain"></div>
     <div class="container">
 
@@ -199,16 +257,16 @@
             </details>
         </div>
 
-        <div class="cta">
-            <a href="https://www.upwork.com/services/product/design-photorealistic-supplement-bottle-3d-mockup-for-amazon-listing-a-content-1999832298062591266?ref=project_share&tier=0" 
-               target="_blank" rel="noopener noreferrer" class="upwork-link">
-               Hire Me on Upwork
-            </a>
-            <br><br>
-            <a href="mailto:hi@suppvisuals.com" style="color: #ffffff; font-size: 1rem; opacity: 0.9; text-decoration: none;">
-               📩 hi@suppvisuals.com
-            </a>
+        <div class="container">
+    <div class="cta">
+        <h3>Ready to Level Up Your Brand?</h3>
+        <div class="social-links-main">
+            <a href="لhttps://www.upwork.com/services/product/design-photorealistic-supplement-bottle-3d-mockup-for-amazon-listing-a-content-1999832298062591266?ref=project_share&tier=0" target="_blank" class="social-item large upwork"><img src="upwork-icon.svg" alt="Upwork"></a>
+            <a href="https://www.linkedin.com/in/suppvisuals/" target="_blank" class="social-item large linkedin"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+            <a href="mailto:hi@suppvisuals.com" class="social-item large email"><img src="email-icon.svg" alt="Email"></a>
         </div>
+    </div>
+</div>
 
         <p class="subcopy">
             Last updated: February 2026 • SuppVisuals – Expert in photorealistic 3D supplement mockups, custom label design, Amazon listing optimization, and high-converting A+ Content for the supplement & wellness industry • Full launch coming soon.
