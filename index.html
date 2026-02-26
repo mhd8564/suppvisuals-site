@@ -162,10 +162,22 @@
 
 /* ریسپانسیو برای گوشی */
 @media (max-width: 640px) {
-    .top-socials { top: 20px; right: 20px; gap: 10px; }
-    .social-item.small img { width: 20px; }
+    /* تنظیمات برای اینکه توی موبایل از اول رنگی و مشخص باشن */
+    .social-item {
+        filter: grayscale(0) opacity(1) !important; /* رنگی شدن دائمی در موبایل */
+        transform: none !important; /* حذف پرش آیکون موقع لمس برای جلوگیری از گیج شدن کاربر */
+    }
+
+    /* تنظیمات اندازه که خودت هم دستی اوکی کردی */
+    .top-socials { 
+        top: 20px; 
+        right: 20px; 
+        gap: 15px; 
+    }
+    .social-item.small img { width: 32px; } /* یا هر عددی که خودت پسندیدی */
+    
     .social-links-main { gap: 30px; }
-    .social-item.large img { width: 45px; }
+    .social-item.large img { width: 50px; }
 }
     </style>
 </head>
